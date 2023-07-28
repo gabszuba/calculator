@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+
+body {
+    font-family: 'Tektur', cursive;
+    font-size: 22px;
+    text-align: center;
+    background-color: #F5EFEF;
+    color: #001a23;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    font: inherit;
+}
+
+h1 {
+    margin: 20px;
+}
+
+.container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 2px solid #424B54;
+    border-radius: 15px;
+    width: 400px;
+    min-width: 350px; 
+    height: 600px;
+    padding: 25px;
+    color: #F5EFEF;
+    background-color: rgb(183, 183, 212);
+}
+
+.display {
+    border-radius: 8px;
+/*     border-style: none;
+ */    height: 110px;
+    margin-bottom: 40px;
+    padding: 5px;
+    background-color: #424B54;
+    border: black solid 5px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), 0 0 0 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    flex: 1 1 calc(25% - 25px);
+    cursor: pointer;
+    min-width: calc(25% - 25px);
+}
+
+button:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.buttons .numberBtn {
+    background-color: #f0d8d8;
+}
+
+.buttons > .operatorBtn, .buttons > .btn {
+    background-color: #f08383;
+}
+
+.display #display-content {
+    text-align: right;
+    font-size: 30px;
+}
+
+.buttons #equalsBtn {
+    background-color: #9bcbcc;
+    min-width: calc(66% - 25px);
+}
+
+.current-operation{
+    text-align: left;
+    font-size: 23px;
+    color: #F5EFEF;
+    padding: 5px;
+}
